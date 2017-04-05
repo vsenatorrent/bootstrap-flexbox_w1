@@ -21,6 +21,7 @@ header {
 	padding-top: 40px;
 	z-index: 1;
 	width: 100%;
+	padding-bottom: 150px;
 	.header_top {
 		height: 60px;
 		line-height: 60px;
@@ -272,6 +273,38 @@ header {
 		margin-bottom: 140px;
 		text-transform: uppercase;
 		font-weight: $bold;
+	}
+}
+.product {
+	background-image: url(../img/product_bg.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	h1 {
+		font-size: 92px;
+		font-weight: $bold;
+		color: #fff;
+		margin-top: 190px;
+	}
+	input {
+		text-transform: uppercase;
+	    padding: 20px 45px;
+	    border-radius: 30px;
+	    font-size: 14px;
+	    font-weight: 700;
+	    background-color: #ffc74a;
+	    border: none;
+	    margin-bottom: 265px;
+	    display: block;
+	    margin: 0 auto;
+	    margin-bottom: 45px;
+	}
+	p {
+		font-size: 18px;
+		color: #fff;
+		a {
+			color: $gold_color;
+		}
 	}
 }
 
