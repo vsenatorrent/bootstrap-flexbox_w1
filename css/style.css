@@ -96,93 +96,54 @@ a:hover {
   /*text-align: center;*/
 }
 
-.section_images {
-  position: relative;
-  z-index: 2;
-  padding-bottom: 45px;
-}
-
-.section_images .img_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-left: 0px;
-  margin-top: -180px;
-}
-
-.section_images li {
-  list-style: none;
-  margin-right: 20px;
-}
-
-.section_images li:last-child {
-  margin-right: 0px;
-}
-
-.section_images img {
-  width: 100%;
-}
-
-.section_images .img1,
-.section_images .img5 {
-  width: 19.1%;
-}
-
-.section_images .img2,
-.section_images .img3,
-.section_images .img4 {
-  width: 20.5%;
-}
-
-.top_banner {
+.offers {
   background-color: #fafafb;
+  padding-top: 50px;
   padding-bottom: 25px;
 }
 
-.top_banner .banner_descr {
+.offers__descr {
   font-size: 30px;
   color: #606f81;
   font-weight: 700;
   margin-bottom: 45px;
 }
 
-.top_banner .search_field {
-  min-height: 20px;
+.offers__search {
+  display: block;
   margin: 0 auto;
-}
-
-.top_banner .search_field [type="search"] {
   padding: 20px 610px 20px 30px;
   border-radius: 30px;
   border: none;
   outline: none;
-  margin-bottom: 25px;
   -webkit-box-shadow: 0px 0px 85px 0px rgba(141, 148, 169, 0.15);
           box-shadow: 0px 0px 85px 0px rgba(141, 148, 169, 0.15);
+  width: 70%;
 }
 
-.top_banner .search_field [type="image"] {
+.offers-search__label {
+  position: relative;
+  display: block;
+}
+
+.offers-search__label::after {
+  content: '';
+  display: block;
   width: 20px;
   height: 20px;
-  position: relative;
-  left: -33px;
-  vertical-align: middle;
+  background: url("../img/Search.png") top center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 20px;
+  right: 195px;
 }
 
-.top_banner .top_banner_btns {
-  margin-left: 40px;
-  margin-bottom: 60px;
+.offers-btns {
+  width: 70%;
+  margin: 25px auto;
 }
 
-.top_banner .top_banner_btns button {
+.offers-btns button {
   padding: 7px 10px;
   border-radius: 20px;
   border: none;
@@ -190,45 +151,67 @@ a:hover {
   font-weight: 700;
 }
 
-.top_banner .top_banner_btns .btn_left button {
+.offers-btns__category {
+  width: 49%;
+  display: inline-block;
+}
+
+.offers-btns__category button {
   color: white;
   background-color: #bdc8d9;
 }
 
-.top_banner .top_banner_btns .btn_left .active {
+.offers-btns__category .active {
   background-color: #ffc74a;
 }
 
-.top_banner .top_banner_btns .btn_right button {
+.offers-btns__cities {
+  width: 49%;
+  display: inline-block;
+}
+
+.offers-btns__cities button {
   color: #aab2bc;
   background-color: #fbfbfc;
   border: 1px solid #bdc8d9;
 }
 
-.top_banner .top_banner_imgs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  flex-decoration: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.offers-btns__cities button:last-child {
+  margin-right: -15px;
 }
 
-.top_banner .top_banner_imgs ul {
+.offers-card {
   background-color: #fff;
   border-radius: 5px;
   padding: 10px 9px 25px 9px;
   -webkit-box-shadow: 0px 0px 85px 0px rgba(141, 148, 169, 0.15);
           box-shadow: 0px 0px 85px 0px rgba(141, 148, 169, 0.15);
+  width: 32%;
+  display: inline-block;
+  margin-bottom: 15px;
 }
 
-.top_banner .top_banner_imgs ul li {
-  list-style: none;
+.offers-card:nth-child(even) {
+  margin: 0 10px;
 }
 
-.top_banner .top_banner_imgs ul li [type="button"]:not(.active) {
+.offers-card__image {
+  width: 100%;
+}
+
+.offers-card__town {
+  font-size: 30px;
+  font-weight: 400;
+  color: #606f81;
+}
+
+.offers-card__city {
+  font-size: 14px;
+  color: #9fa8b2;
+  margin-bottom: 22px;
+}
+
+.offers-card__btn:not(.active) {
   text-transform: uppercase;
   padding: 10px 20px;
   border-radius: 15px;
@@ -239,7 +222,7 @@ a:hover {
           box-shadow: 0px 0px 54px 0px rgba(141, 148, 169, 0.25);
 }
 
-.top_banner .top_banner_imgs .active {
+.offers-card__btn--active {
   padding: 10px 20px;
   background-color: #ffc74a;
   color: #be8505;
@@ -247,18 +230,6 @@ a:hover {
   border-radius: 30px;
   text-transform: uppercase;
   font-weight: 700;
-}
-
-.top_banner .top_banner_imgs .img_title {
-  font-size: 30px;
-  font-weight: 400;
-  color: #606f81;
-}
-
-.top_banner .top_banner_imgs .img_descr {
-  font-size: 14px;
-  color: #9fa8b2;
-  margin-bottom: 22px;
 }
 
 .sub_banner {

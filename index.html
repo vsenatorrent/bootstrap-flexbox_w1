@@ -27,7 +27,8 @@
                     <li class="header-nav__item"><a href="#" class="header-nav__link">Journey</a></li>
                     <li class="header-nav__item"><a href="#" class="header-nav__link">Hotels</a></li>
                     <li class="header-nav__item"><a href="#" class="header-nav__link">Travelers</a></li>
-                    <li class="header-nav__item"><img src="img/search.png" alt="search icon" class="header-nav__search-icon"></li>
+                    <li class="header-nav__item"><img src="img/search.png" alt="search icon"
+                            class="header-nav__search-icon"></li>
                 </ul>
             </nav>
         </div>
@@ -39,7 +40,7 @@
         </div>
     </header>
     <main>
-        <section class="section_images clearfix">
+        <!-- <section class="section_images clearfix">
             <div class="container-fluid">
                 <div class="row">
                     <ul class="img_list">
@@ -51,33 +52,82 @@
                     </ul>
                 </div>
             </div>
-        </section>
-        <section class="top_banner clearfix">
+        </section> -->
+        <section class="offers">
             <div class="container">
                 <div class="row">
-                    <p class="banner_descr text-center">Where you want to go?</p>
-                    <div class="search_field text-center">
-                        <input type="search" placeholder="Search place">
-                        <input type="image" src="img/Search.png">
-                    </div>
+                    <p class="offers__descr text-center">Where you want to go?</p>
+                    <label class="offers-search__label" for="offers-search"></label>
+                    <input type="search" placeholder="Search place" class="offers__search" id="offers-search">
                 </div>
                 <div class="row">
-                    <div class="top_banner_btns">
-                        <div class="btn_left col-md-4 text-right">
+                    <div class="offers-btns">
+                        <div class="offers-btns__category">
                             <button class="active">Journey</button>
                             <button>Travelers</button>
                             <button>Guide</button>
                         </div>
-                        <div class="btn_right col-md-offset-3 col-md-4">
+                        <div class="offers-btns__cities text-right">
                             <button>Mazury</button>
                             <button>Cracow</button>
                             <button>Zakopane</button>
                         </div>
                     </div>
                 </div>
-                <div class="top_banner_imgs">
+                <div class="offers-cards">
                     <div class="row">
-                        <ul class="text-center">
+                        <div class="offers-card text-center">
+                            <img class="offers-card__image" src="img/banner_1.png"" alt=" Card image cap">
+                            <div class="offers-card-descr">
+                                <h4 class="offers-card__town">Poznan</h4>
+                                <p class="offers-card__city">Wielkopolskie</p>
+                                <a href="#" class="offers-card__btn">View offers</a>
+                            </div>
+                        </div>
+                        <div class="offers-card text-center">
+                            <img class="offers-card__image" src="img/banner_2.png"" alt=" Card image cap">
+                            <div class="offers-card-descr">
+                                <h4 class="offers-card__town">Warsaw</h4>
+                                <p class="offers-card__city">Mazowieckie</p>
+                                <a href="#" class="offers-card__btn--active">View offers</a>
+                            </div>
+                        </div>
+                        <div class="offers-card text-center">
+                            <img class="offers-card__image" src="img/banner_3.png"" alt=" Card image cap">
+                            <div class="offers-card-descr">
+                                <h4 class="offers-card__town">Wroclaw</h4>
+                                <p class="offers-card__city">Dolnoslaskie</p>
+                                <a href="#" class="offers-card__btn">View offers</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="offers-card text-center">
+                            <img class="offers-card__image" src="img/banner_4.png"" alt=" Card image cap">
+                            <div class="offers-card-descr">
+                                <h4 class="offers-card__town">Karpacz</h4>
+                                <p class="offers-card__city">Dolnoslaskie</p>
+                                <a href="#" class="offers-card__btn">View offers</a>
+                            </div>
+                        </div>
+                        <div class="offers-card text-center">
+                            <img class="offers-card__image" src="img/banner_5.png"" alt=" Card image cap">
+                            <div class="offers-card-descr">
+                                <h4 class="offers-card__town">Dolina Olczyska</h4>
+                                <p class="offers-card__city">Maloposkie</p>
+                                <a href="#" class="offers-card__btn">View offers</a>
+                            </div>
+                        </div>
+                        <div class="offers-card text-center">
+                            <img class="offers-card__image" src="img/banner_6.png"" alt=" Card image cap">
+                            <div class="offers-card-descr">
+                                <h4 class="offers-card__town">Kozy</h4>
+                                <p class="offers-card__city">Slaskie</p>
+                                <a href="#" class="offers-card__btn">View offers</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <ul class="text-center">
                             <li>
                                 <img src="img/banner_1.png" alt="@">
                             </li>
@@ -171,7 +221,7 @@
                                 <input type="button" value="view offers">
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
