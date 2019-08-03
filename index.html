@@ -6,8 +6,7 @@
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- <link rel="icon" href="img/favicon.ico"> -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" sizes="16x16" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -27,7 +26,7 @@
                     <li class="header-nav__item"><a href="#" class="header-nav__link">Journey</a></li>
                     <li class="header-nav__item"><a href="#" class="header-nav__link">Hotels</a></li>
                     <li class="header-nav__item"><a href="#" class="header-nav__link">Travelers</a></li>
-                    <li class="header-nav__item"><img src="img/search.png" alt="search icon"
+                    <li class="header-nav__item header-nav__search"><img src="img/search.png" alt="search icon"
                             class="header-nav__search-icon"></li>
                 </ul>
             </nav>
@@ -40,20 +39,7 @@
         </div>
     </header>
     <main>
-        <!-- <section class="section_images clearfix">
-            <div class="container-fluid">
-                <div class="row">
-                    <ul class="img_list">
-                        <li class="img_1"><img src="img/img_1.png" alt="@"></li>
-                        <li class="img_2"><img src="img/img_2.png" alt="@"></li>
-                        <li class="img_3"><img src="img/img_3.png" alt="@"></li>
-                        <li class="img_4"><img src="img/img_4.png" alt="@"></li>
-                        <li class="img_5"><img src="img/img_5.png" alt="@"></li>
-                    </ul>
-                </div>
-            </div>
-        </section> -->
-        <section class="offers">
+        <section class="offers clearfix">
             <div class="container">
                 <div class="row">
                     <p class="offers__descr text-center">Where you want to go?</p>
@@ -61,20 +47,20 @@
                     <input type="search" placeholder="Search place" class="offers__search" id="offers-search">
                 </div>
                 <div class="row">
-                    <div class="offers-btns">
-                        <div class="offers-btns__category">
+                    <div class="offers-btns clearfix">
+                        <div class="offers-btns__category col-md-6">
                             <button class="active">Journey</button>
                             <button>Travelers</button>
                             <button>Guide</button>
                         </div>
-                        <div class="offers-btns__cities text-right">
+                        <div class="offers-btns__cities col-md-6 text-right">
                             <button>Mazury</button>
                             <button>Cracow</button>
                             <button>Zakopane</button>
                         </div>
                     </div>
                 </div>
-                <div class="offers-cards">
+                <div class="offers-cards text-center">
                     <div class="row">
                         <div class="offers-card text-center">
                             <img class="offers-card__image" src="img/banner_1.png"" alt=" Card image cap">
@@ -225,53 +211,50 @@
                 </div>
             </div>
         </section>
-        <section class="sub_banner clearfix">
+        <section class="best-offer container-fluid">
             <div class="container">
                 <div class="row">
-                    <p class="banner_descr text-center">
+                    <p class="best-offer__title text-center">
                         Explore city
                     </p>
                 </div>
                 <div class="row">
-                    <div class="left_side col-md-5">
-                        <h3>
+                    <div class="best-offer__descr col-md-5">
+                        <h3 class="best-offer__caption">
                             Sandomierz
                         </h3>
-                        <p>
+                        <p class="best-offer__text">
                             Sandomierz is one of the oldest and historically most significant cities in Poland.
                             Archeological finds around the city indicate that humans have inhabited the area since
                             neolithic times. The city came into existence in the early Middle Ages, taking advantage of
                             an excellent location at the junction of Vistula and San rivers, and on the path of
                             important trade routes.
                         </p>
-                        <p>
+                        <p class="best-offer__text">
                             The first known historical mention of the city comes from the early 12th-century, when the
                             chronicler Gallus Anonymus ranked it together with Kraków and Wrocław as one of the main
                             cities of Poland. The testament (ca 1115-1118) of Boleslaw III Wrymouth, in which he divided
                             Poland among his sons, designated Sandomierz as the capital of one of the resulting
                             principalities, the Duchy of Sandomierz.
                         </p>
-                        <input type="button" value="check offers">
+                        <button class="best-offer__offer-btn">Check offers</button>
                     </div>
-                    <div class="right_side col-md-offset-1 col-md-6">
-                        <img src="img/right_side_img.png" alt="@">
+                    <div class="best-offer__image-wrapper col-md-offset-1 col-md-6">
+                        <img src="img/right_side_img.png" alt="town photo" class="best-offer__image">
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="product">
-            <div class="container-fluid">
-                <div class="row">
-                    <h1 class="text-center">Enjoy your journey</h1>
-                    <input type="button" value="Sign up">
-                    <p class="text-center">You can also sign up on our<a href="#"> newsletter</a></p>
                 </div>
             </div>
         </section>
     </main>
-
-
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <footer class="connect">
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="connect__title text-center">Enjoy your journey</h1>
+                <button class="connect__sign-btn">Sign up</button>
+                <p class="connect__descr text-center">You can also sign up on our<a href="#" class="connect__link"> newsletter</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

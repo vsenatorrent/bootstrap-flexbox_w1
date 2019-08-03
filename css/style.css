@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 body {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -152,8 +153,8 @@ a:hover {
 }
 
 .offers-btns__category {
-  width: 49%;
-  display: inline-block;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .offers-btns__category button {
@@ -166,18 +167,14 @@ a:hover {
 }
 
 .offers-btns__cities {
-  width: 49%;
-  display: inline-block;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .offers-btns__cities button {
   color: #aab2bc;
   background-color: #fbfbfc;
   border: 1px solid #bdc8d9;
-}
-
-.offers-btns__cities button:last-child {
-  margin-right: -15px;
 }
 
 .offers-card {
@@ -232,14 +229,11 @@ a:hover {
   font-weight: 700;
 }
 
-.sub_banner {
-  background-image: url(../img/sub_banner_bg.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.best-offer {
+  background-color: #f9eaea;
 }
 
-.sub_banner .banner_descr {
+.best-offer__title {
   font-size: 30px;
   color: #606f81;
   font-weight: 700;
@@ -247,32 +241,32 @@ a:hover {
   margin-bottom: 100px;
 }
 
-.sub_banner .left_side h3 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #ffc74a;
-  margin-bottom: 45px;
-}
-
-.sub_banner .left_side p {
+.best-offer__text {
   font-size: 14px;
   color: #606f81;
   line-height: 2;
   margin-bottom: 40px;
 }
 
-.sub_banner .right_side {
+.best-offer__caption {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffc74a;
+  margin-bottom: 45px;
+}
+
+.best-offer__image-wrapper {
   border: 15px solid #ffc74a;
 }
 
-.sub_banner .right_side img {
+.best-offer__image {
   width: 100%;
   position: relative;
   left: -50px;
   top: -45px;
 }
 
-.sub_banner [type="button"] {
+.best-offer__offer-btn {
   padding: 20px 45px;
   background-color: #ffc74a;
   color: #be8505;
@@ -283,21 +277,21 @@ a:hover {
   font-weight: 700;
 }
 
-.product {
+.connect {
   background-image: url(../img/product_bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 150px 0;
 }
 
-.product h1 {
+.connect__title {
   font-size: 92px;
   font-weight: 700;
   color: #fff;
-  margin-top: 190px;
 }
 
-.product input {
+.connect__sign-btn {
   text-transform: uppercase;
   padding: 20px 45px;
   border-radius: 30px;
@@ -311,12 +305,12 @@ a:hover {
   margin-bottom: 45px;
 }
 
-.product p {
+.connect__descr {
   font-size: 18px;
   color: #fff;
 }
 
-.product p a {
+.connect__link {
   color: #ffc74a;
 }
 
