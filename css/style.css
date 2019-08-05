@@ -104,7 +104,7 @@ a:hover {
 }
 
 .offers__descr {
-  font-size: 30px;
+  font-size: 36px;
   color: #606f81;
   font-weight: 700;
   margin-bottom: 45px;
@@ -113,7 +113,7 @@ a:hover {
 .offers__search {
   display: block;
   margin: 0 auto;
-  padding: 20px 610px 20px 30px;
+  padding: 15px 20px;
   border-radius: 30px;
   border: none;
   outline: none;
@@ -125,6 +125,8 @@ a:hover {
 .offers-search__label {
   position: relative;
   display: block;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .offers-search__label::after {
@@ -135,8 +137,8 @@ a:hover {
   background: url("../img/Search.png") top center no-repeat;
   background-size: cover;
   position: absolute;
-  top: 20px;
-  right: 195px;
+  top: 16px;
+  right: 15px;
 }
 
 .offers-btns {
@@ -188,7 +190,7 @@ a:hover {
   margin-bottom: 15px;
 }
 
-.offers-card:nth-child(even) {
+.offers-card:nth-child(3n+2) {
   margin: 0 10px;
 }
 
@@ -234,7 +236,7 @@ a:hover {
 }
 
 .best-offer__title {
-  font-size: 30px;
+  font-size: 36px;
   color: #606f81;
   font-weight: 700;
   margin-top: 70px;
@@ -249,7 +251,7 @@ a:hover {
 }
 
 .best-offer__caption {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   color: #ffc74a;
   margin-bottom: 45px;
@@ -289,6 +291,7 @@ a:hover {
   font-size: 92px;
   font-weight: 700;
   color: #fff;
+  margin-bottom: 50px;
 }
 
 .connect__sign-btn {

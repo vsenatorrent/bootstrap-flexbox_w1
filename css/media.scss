@@ -18,6 +18,15 @@
   @media (min-width: 1025px) and (max-width: 1280px) {
     
     //CSS
+
+    .best-offer {
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__image-wrapper {
+            margin-top: 130px;
+        }
+    }
     
   }
   
@@ -40,6 +49,41 @@
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     
     //CSS
+
+    .header-nav {
+        // text-align: right;
+        &__item {
+
+            & + & {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .offers {
+        &-search__label {
+            &:after {
+                // right: 75px;
+            }
+        }
+    }
+
+    .best-offer {
+        &__title {
+            margin-bottom: 10px;
+        }
+        &__image-wrapper {
+            margin-top: 200px;
+        }
+    }
+
+    .connect {
+        padding: 120px 0;
+        &__title {
+            font-size: 64px;
+            margin-bottom: 40px;
+        }
+    }
     
   }
   
@@ -59,7 +103,7 @@
     ##Screen = B/w 320px to 479px
   */
   
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (min-width: 320px) and (max-width: 767px) {
     
     //CSS
     .header-wrapper {
@@ -111,12 +155,13 @@
         }
         &__search {
             width: 90%;
-            padding: 15px 5px 15px 25px;
+            // padding: 15px 5px 15px 25px;
         }
         &-search__label {
+            width: 90%;
             &::after {
-                top: 15px;
-                right: 30px;
+                // top: 15px;
+                // right: 30px;
             } 
         }
         &-btns {
@@ -131,7 +176,7 @@
         }
         &-card {
             width: 46%;
-            &:nth-child(even){
+            &:nth-child(3n+2){
                 margin: 0;
             }
             &__town {
